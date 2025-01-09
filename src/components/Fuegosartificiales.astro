@@ -2,13 +2,17 @@
     <div class="firework"></div>
     <div class="firework"></div>
     <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
 </section>
 
 
 <style>
     body {
     background: 
-        linear-gradient(#0007, #0000),
+        linear-gradient(#0007, #06060600),
         #123;
     margin: 0;
     height: 100vh;
@@ -160,4 +164,83 @@
     animation-delay: -0.4s;
 }
 
+.firework:nth-child(4) {
+    --x: -80vmin;
+    --y: -30vmin;
+}
+
+.firework:nth-child(4),
+.firework:nth-child(4)::before,
+.firework:nth-child(4)::after {
+    --color1: cyan;
+    --color2: lightcyan;
+    --color3: lightblue;
+    --color4: PaleTurquoise;
+    --color5: SkyBlue;
+    --color6: lavender;
+    --finalSize: 35vmin;
+    left: 70%;
+    top: 60%;
+    animation-delay: -0.4s;
+}
+.firework:nth-child(5) {
+    --x: -70vmin;
+    --y: -80vmin;
+}
+
+.firework:nth-child(5),
+.firework:nth-child(5)::before,
+.firework:nth-child(5)::after {
+    --color1: cyan;
+    --color2: lightcyan;
+    --color3: lightblue;
+    --color4: PaleTurquoise;
+    --color5: SkyBlue;
+    --color6: lavender;
+    --finalSize: 35vmin;
+    left: 30%;
+    top: 70%;
+    animation-delay: -0.4s;
+}
+
+
+.firework:nth-child(6) {
+    --x: -20vmin;
+    --y: -70vmin;
+}
+
+.firework:nth-child(6),
+.firework:nth-child(6)::before,
+.firework:nth-child(6)::after {
+    --color1: cyan;
+    --color2: lightcyan;
+    --color3: lightblue;
+    --color4: PaleTurquoise;
+    --color5: SkyBlue;
+    --color6: lavender;
+    --finalSize: 35vmin;
+    left: 70%;
+    top: 60%;
+    animation-delay: -0.4s;
+}
+
+.firework:nth-child(7) {
+    --x: -60vmin;
+    --y: -70vmin;
+}
+
+.firework:nth-child(7),
+.firework:nth-child(7)::before,
+.firework:nth-child(7)::after {
+    --color1: cyan;
+    --color2: lightcyan;
+    --color3: lightblue;
+    --color4: PaleTurquoise;
+    --color5: SkyBlue;
+    --color6: lavender;
+    --finalSize: 35vmin;
+    left: 70%;
+    top: 60%;
+    animation-delay: -0.4s;
+}
 </style>
