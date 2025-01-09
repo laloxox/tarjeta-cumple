@@ -1,11 +1,12 @@
 <section>
-    <div class="firework"></div>
-    <div class="firework"></div>
-    <div class="firework"></div>
-    <div class="firework"></div>
-    <div class="firework"></div>
-    <div class="firework"></div>
-    <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>     
 </section>
 
 
@@ -20,10 +21,11 @@
 }
 
 @keyframes firework {
-    0% { transform: translate(var(--x), var(--initialY)); width: var(--initialSize); opacity: 1; }
-    50% { width: 0.5vmin; opacity: 1; }
+    0% { transform: translate(var(--x), var(--initialY)); width: var(--initialSize); opacity: 2; }
+    50% { width: 0.9vmin; opacity: 2; }
     100% { width: var(--finalSize); opacity: 0; }
 }
+
 
 /* @keyframes fireworkPseudo {
     0% { transform: translate(-50%, -50%); width: var(--initialSize); opacity: 1; }
@@ -178,7 +180,7 @@
     --color4: PaleTurquoise;
     --color5: SkyBlue;
     --color6: lavender;
-    --finalSize: 35vmin;
+    --finalSize: 50vmin;
     left: 70%;
     top: 60%;
     animation-delay: -0.4s;
@@ -191,13 +193,13 @@
 .firework:nth-child(5),
 .firework:nth-child(5)::before,
 .firework:nth-child(5)::after {
-    --color1: cyan;
-    --color2: lightcyan;
-    --color3: lightblue;
-    --color4: PaleTurquoise;
-    --color5: SkyBlue;
-    --color6: lavender;
-    --finalSize: 35vmin;
+    --color1: rgb(238, 103, 243);
+    --color2: rgb(208, 108, 248);
+    --color3: rgb(205, 169, 245);
+    --color4: rgb(86, 52, 241);
+    --color5: rgb(39, 183, 240);
+    --color6: rgb(89, 89, 228);
+    --finalSize: 40vmin;
     left: 30%;
     top: 70%;
     animation-delay: -0.4s;
@@ -212,12 +214,12 @@
 .firework:nth-child(6),
 .firework:nth-child(6)::before,
 .firework:nth-child(6)::after {
-    --color1: cyan;
-    --color2: lightcyan;
-    --color3: lightblue;
-    --color4: PaleTurquoise;
-    --color5: SkyBlue;
-    --color6: lavender;
+    --color1: rgb(80, 240, 88);
+    --color2: rgb(77, 233, 233);
+    --color3: rgb(196, 243, 110);
+    --color4: rgb(139, 248, 106);
+    --color5: rgb(54, 197, 253);
+    --color6: rgb(250, 233, 139);
     --finalSize: 35vmin;
     left: 70%;
     top: 60%;
@@ -232,14 +234,34 @@
 .firework:nth-child(7),
 .firework:nth-child(7)::before,
 .firework:nth-child(7)::after {
-    --color1: cyan;
-    --color2: lightcyan;
-    --color3: lightblue;
-    --color4: PaleTurquoise;
-    --color5: SkyBlue;
-    --color6: lavender;
-    --finalSize: 35vmin;
+    --color1: rgb(45, 206, 93);
+    --color2: rgb(121, 230, 175);
+    --color3: rgb(127, 209, 236);
+    --color4: rgb(213, 250, 127);
+    --color5: rgb(100, 192, 228);
+    --color6: rgb(135, 135, 245);
+    --finalSize: 55vmin;
     left: 70%;
+    top: 60%;
+    animation-delay: -0.4s;
+}
+
+.firework:nth-child(8) {
+    --x: -60vmin;
+    --y: -70vmin;
+}
+
+.firework:nth-child(8),
+.firework:nth-child(8)::before,
+.firework:nth-child(8)::after {
+    --color1: rgb(182, 42, 61);
+    --color2: rgb(233, 53, 83);
+    --color3: rgb(204, 76, 59);
+    --color4: rgb(230, 233, 67);
+    --color5: rgb(226, 228, 100);
+    --color6: rgb(247, 107, 107);
+    --finalSize: 65vmin;
+    left: 40%;
     top: 60%;
     animation-delay: -0.4s;
 }
